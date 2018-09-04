@@ -1,6 +1,5 @@
 body {
-  background-color: #fbc547;
-  color: #333;
+
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
@@ -17,8 +16,60 @@ a {
     color: rgba(#000, 0.6);
   }
 }
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.index-name {
+  padding: 3px;
+   h1 {
+    font-size: 50px;
+    color: #797aa2;
+   }
 }
+
+
+.links a {
+  text-decoration: none;
+}
+
+.links:hover a{
+  opacity: .8;
+}
+
+
+// tab
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
